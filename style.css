@@ -1,0 +1,174 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #fafafa;
+  padding-top: 8px;
+  padding-bottom: 16px;
+  background-color: 	#abe3dd;
+}
+
+.nav a {
+  color: #fdfdfd;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+}
+
+
+.nav a:hover {
+  text-decoration: underline;
+  opacity: 0.5;
+}
+
+
+
+
+
+
+
+//home
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: Raleway, sans-serif;
+}
+
+.container {
+  width: 70%;
+  margin: 4rem auto;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.4rem double #000000;
+  position: relative;
+}
+
+.poster {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  z-index: 1;
+  height: 80%;
+  width: 60%;
+  clip-path: polygon(0% 40%, 0% 100%, 100% 100%, 100% 0%, 0% 0%, 0% 8%, 21% 21%);
+  border: 0.2rem solid #FFFFFF;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.text {
+  font-weight: 600;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: rotate(180deg);
+  text-align: right;
+  margin-top: 0.2rem;
+  color: rgba(255, 0, 0, 0.2);
+  writing-mode: vertical-rl;
+}
+
+.text p {
+  margin: 0;
+}
+
+
+
+.project {
+  display: inline-block;
+  position: relative;
+  right:120px;
+   top:0;
+   bottom: 100px;
+  background-image:none;
+  background-position: center;
+  background-size: cover;
+  width: 800px;
+  height: 500px;
+  margin: 32px auto;
+  border-radius: 10px;
+  text-align: center;
+  color: #fdfdfd;
+  box-shadow: 0;
+  transition: all .3s ease-in-out;
+}
+.project:hover {
+  box-shadow: 0 3px 20px #888888
+}
+.project h2 {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+  padding-top: 32px;
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: all 1.5s ease-in-out;
+}
+
+.project:hover h2 {
+  opacity: 1;
+  transform: none;
+}
+
+.project p {
+  position: relative;
+  left:10px;
+   top:0;
+  z-index: 2;
+  padding: 64px 32px 16px 32px;
+  opacity: 0;
+  font-size: 0.8em;
+  transform: translateY(20px);
+  transition: all .6s ease-in-out;
+}
+
+.project:hover p {
+  opacity: 1;
+  transform: none;
+}
+
+.project hr {
+  transform: scaleX(0);
+  border: 0;
+  border-bottom: 1px solid #fdfdfd;
+  transform-origin: center;
+  transition: all 1.5s ease-in-out;
+}
+
+.project:hover hr {
+  transform: scaleX(1);
+  opacity: 1;
+}
+
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0;
+  transition: all .3s ease-in-out;
+  border-radius: 10px;
+}
+.project:hover .cover {
+  opacity: .3;
+}
+
+
+.violet img {
+  position:relative;
+  margin-top: 100px;
+  margin-left: 300px;
+  width:60%;
+  height:60%;
+}
